@@ -1,67 +1,79 @@
 #### Facebook libraries
 
-react-js
+react
 
-react-router-js
+redux
 
-react-redux-js
+router
 
-immutable-js
+immutable
 
-graphql-js
+graphql
 
 ---
 
 #### Module loader
 
-require-js
+require
 
 ---
 
 #### Unit test
 
-mocha-js
+mocha
 
 ---
 
 #### Charting
 
-highcharts-js
+d3
 
-d3-js
+highcharts
 
 ---
 
 #### Web crawler
 
-cheerio-js
+cheerio
 
-request-js
+phantom
+
+request
 
 ---
 
 ### Webpack
 
-webpack-js
+babel-core
 
-sass-loader-js
+babel-loader
 
-babel-core-js
+babel-preset-env
 
-babel-loader-js
+babel-preset-react
 
-babel-preset-es2015-js
+css-loader
 
-babel-preset-react-js
+extract-text-webpack-plugin
+
+node-sass
+
+sass-loader
+
+style-loader
+
+webpack
 
 ---
 
 ### Lint
 
-eslint-config-airbnb-js
+eslint
 
-eslint-plugin-import-js
+eslint-config-airbnb
 
-eslint-plugin-jsx-a11y-js
+eslint-plugin-import
 
-eslint-plugin-react-js
+eslint-plugin-jsx-a11y
+
+eslint-plugin-react
