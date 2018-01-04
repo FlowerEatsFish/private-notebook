@@ -30,7 +30,7 @@ $ sudo apt-get install krita
 $ sudo apt-get install mpv
 ```
 
-### Node v8.x
+#### Node v8.x
 
 ```linux
 $ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
