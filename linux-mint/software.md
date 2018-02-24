@@ -1,5 +1,7 @@
 #### Chinese input (gcin)
 
+Available on software manager.
+
 ```linux
 $ sudo apt-get install gcin
 ```
@@ -26,6 +28,8 @@ $ sudo apt-get install krita
 
 #### Movie player
 
+Available on software manager.
+
 ```linux
 $ sudo apt-get install mpv
 ```
@@ -39,11 +43,15 @@ $ sudo apt-get install -y nodejs
 
 #### Specific cursors of mouse
 
+Available on software manager.
+
 ```linux
 $ sudo apt-get install breeze-cursor-theme
 ```
 
 #### Steam
+
+Available on software manager.
 
 ```linux
 $ sudo apt-get install steam

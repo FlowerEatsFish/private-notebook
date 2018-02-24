@@ -1,3 +1,19 @@
+#### Animation
+
+motion
+
+move
+
+---
+
+#### Charting
+
+d3
+
+highcharts
+
+---
+
 #### Facebook libraries
 
 react
@@ -9,6 +25,20 @@ router
 immutable
 
 graphql
+
+---
+
+#### Lint
+
+eslint
+
+eslint-config-airbnb
+
+eslint-plugin-import
+
+eslint-plugin-jsx-a11y
+
+eslint-plugin-react
 
 ---
 
@@ -24,14 +54,6 @@ mocha
 
 ---
 
-#### Charting
-
-d3
-
-highcharts
-
----
-
 #### Web crawler
 
 cheerio
@@ -42,7 +64,7 @@ request
 
 ---
 
-### Webpack
+#### Webpack
 
 babel-core
 
@@ -66,14 +88,8 @@ webpack
 
 ---
 
-### Lint
+#### XMLHttpRequests
 
-eslint
+axios
 
-eslint-config-airbnb
-
-eslint-plugin-import
-
-eslint-plugin-jsx-a11y
-
-eslint-plugin-react
+axios-jsonp-pro

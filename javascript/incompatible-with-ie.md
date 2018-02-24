@@ -1,3 +1,21 @@
+## ECMAScript 6 (or newest) support on Internet Explorer 9~11.
+
+To avoid to waste time to rewrite code from ES6 (or newest) into ES5.
+
+Explame of methods: includes() and find().
+
+More info: [Features and browsers supported](https://polyfill.io/v2/docs/features/)
+
+#### Troubleshooting:
+
+Copy the code as follow to html file.
+
+```html
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+```
+
+
+
 ## [The includes() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
 
 Determines whether one string may be found within another string, returning true or false as appropriate.

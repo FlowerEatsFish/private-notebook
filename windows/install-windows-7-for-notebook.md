@@ -19,6 +19,8 @@
 
 * [CCleaner](https://www.piriform.com/ccleaner)
 
+* [Driver Booster](https://www.iobit.com/en/driver-booster.php)
+
 * [Eusing Cleaner](http://www.eusing.com/free_system_cleaner/system_cleaner.htm)
 
 * [Eusing Free Registry Cleaner](http://www.eusing.com/free_registry_cleaner/registry_cleaner.htm)
