@@ -13,7 +13,7 @@
 
 ## Other softwares
 
-* [7-Zip](http://www.7-zip.org/)
+* [7-Zip](http://www.7-zip.org/) (Community edition)
 
 * [Best Antivirus 2017](http://www.toptenreviews.com/software/security/best-antivirus-software/)
 
@@ -27,10 +27,14 @@
 
 * [Google Chrome](https://www.google.com/chrome/)
 
-* [Microsoft Office](https://products.office.com/)
+* [Microsoft Office](https://products.office.com/) (Business edition)
 
 * [Mozilla Firefox](https://www.mozilla.org/)
+
+* [WinRAR](https://www.rarlab.com/) (Business edition)
 
 * [Speccy](https://www.piriform.com/speccy)
 
 * [Windows 7 Logon Background Changer](http://www.julien-manici.com/windows_7_logon_background_changer/)
+
+* [WPS Office](https://www.wps.com/) (Community edition)
