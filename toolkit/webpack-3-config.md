@@ -1,3 +1,5 @@
+# ./webpack.config.js
+
 ## 使用套件：
 
 ```json
@@ -24,9 +26,9 @@
 }
 ```
 
-#### 指令：
+### 安裝指令：
 
-```
+```shell
 npm install prop-types react react-dom react-redux redux --save
 npm install babel-core babel-loader babel-preset-env babel-preset-react css-loader extract-text-webpack-plugin@3 node-sass sass-loader style-loader webpack@3 --save-dev
 ```
@@ -96,7 +98,7 @@ module.exports = {
 
 ## 打包結果：
 
-```
+```markdown
 project
 ├─┬ dist
 │ ├─┬ js

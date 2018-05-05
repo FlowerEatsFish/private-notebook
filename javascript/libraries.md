@@ -1,4 +1,6 @@
-#### Animation
+# ECMAScript with libraries
+
+## Animation
 
 motion
 
@@ -6,7 +8,7 @@ move
 
 ---
 
-#### Charting
+## Charting
 
 d3
 
@@ -14,7 +16,7 @@ highcharts
 
 ---
 
-#### Facebook libraries
+## Facebook libraries
 
 react
 
@@ -28,7 +30,7 @@ graphql
 
 ---
 
-#### Lint
+## Lint
 
 eslint
 
@@ -42,19 +44,19 @@ eslint-plugin-react
 
 ---
 
-#### Module loader
+## Module loader
 
 require
 
 ---
 
-#### Unit test
+## Unit test
 
 mocha
 
 ---
 
-#### Web crawler
+## Web crawler
 
 cheerio
 
@@ -64,7 +66,7 @@ request
 
 ---
 
-#### Webpack
+## Webpack
 
 babel-core
 
@@ -88,7 +90,7 @@ webpack
 
 ---
 
-#### XMLHttpRequests
+## XMLHttpRequests
 
 axios
 

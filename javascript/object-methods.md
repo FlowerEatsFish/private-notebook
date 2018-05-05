@@ -1,12 +1,16 @@
-#### Description:
+# Object chart card
+
+## Description
 
 The object constructor creates an object wrapper.
 
 - [ ] Not used.
 - [x] Used.
 
-#### Methods:
+## Methods
+
 ---
+
 - [ ] object.assign
 - [ ] object.constructor
 - [ ] object.create
@@ -25,16 +29,20 @@ The object constructor creates an object wrapper.
 - [ ] object.isFrozen
 - [ ] object.isPrototypeOf
 - [ ] object.isSealed
+
 ---
+
 - [x] object.keys
 - The Object.keys() method returns an array of a given object's own enumerable properties, in the same order as that provided by a for...in loop (the difference being that a for-in loop enumerates properties in the prototype chain as well).
 
 Syntax:
+
 ```js
 Object.keys(obj)
 ```
 
 Examples:
+
 ```js
 var arr = ['a', 'b', 'c'];
 console.log(Object.keys(arr)); // console: ['0', '1', '2']
@@ -51,13 +59,14 @@ console.log(Object.keys(anObj)); // ['2', '7', '100']
 var myObj = Object.create({}, {
   getFoo: {
     value: function () { return this.foo; }
-  } 
+  }
 });
 myObj.foo = 1;
 console.log(Object.keys(myObj)); // console: ['foo']
 ```
 
 ---
+
 - [ ] object.preventExtensions
 - [ ] object.propertyIsEnumerable
 - [ ] object.proto

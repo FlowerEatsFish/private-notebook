@@ -1,4 +1,4 @@
-## Installation of windows 7
+# Installation of windows 7
 
 1. Download [ABR (Activation Backup and Restore)](https://directedge.us/content/abr-activation-backup-and-restore).
 2. Run **activation_backup.exe** to collect certificate (*backup-cert.xrm-ms*) and product key (*backup-key.txt*).

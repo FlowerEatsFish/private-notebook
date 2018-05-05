@@ -1,4 +1,6 @@
-#### MBR (Master Boot Record)
+# Disk partition
+
+## MBR (Master Boot Record)
 
 ```windows
 # Press "Shift + F10" in installing windows.
@@ -9,7 +11,7 @@ $ clean
 $ exit
 ```
 
-#### GPT (GUID Partition Table)
+## GPT (GUID Partition Table)
 
 ```windows
 # Press "Shift + F10" in installing windows.

@@ -1,4 +1,4 @@
-### Fix boot files installed on other disk rather than OS disk . Windows 10.
+# Fix boot files installed on other disk rather than OS disk on Windows 10
 
 Before:
 
@@ -18,28 +18,33 @@ After:
 
 2. Create a partition for disk 1 using Diskpart.
 
-```windows
-$ create partition primary align=1024 size=500
-$ format fs=ntfs unit=4096 quick
-```
+   ```shell
+   create partition primary align=1024 size=500
+   format fs=ntfs unit=4096 quick
+   ```
 
 3. Restore boot partition to the new partition using EaseUS Todo Backup.
 
 4. Delete the old boot partition using Diskpart.
 
-```windows
-$ Select Disk 2
-$ Select Partition [number of the old boot partition]
-$ DELETE partition
-```
+   ```shell
+   Select Disk 2
+   Select Partition [number of the old boot partition]
+   DELETE partition
+   ```
 
 5. Under Windows 10 installation mode, use Command Prompt (cmd) to fix boot file.
 
-```windows
-$ bootrec /fixmbr     # 把 Windows 相容的 MBR 寫入系統磁碟分割
-$ bootrec /fixboot    # 新的開機磁區 Windows 相容的開機磁區寫入系統磁碟分割
-$ bootrec /rebuildbcd # 重建 BCD (Boot Configuration Database) 開機設定資料存放區
-```
+   ```shell
+   # 把 Windows 相容的 MBR 寫入系統磁碟分割
+   $ bootrec /fixmbr
+
+   # 新的開機磁區 Windows 相容的開機磁區寫入系統磁碟分割
+   $ bootrec /fixboot
+
+   # 重建 BCD (Boot Configuration Database) 開機設定資料存放區
+   $ bootrec /rebuildbcd
+   ```
 
 Reference:
 

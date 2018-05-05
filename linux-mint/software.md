@@ -1,58 +1,60 @@
-#### Chinese input (gcin)
+# Software list
+
+## Chinese input (gcin)
 
 Available on software manager.
 
-```linux
-$ sudo apt-get install gcin
+```shell
+sudo apt-get install gcin
 ```
 
-#### Google chrome
+## Google chrome
 
-```linux
-$ sudo apt-get install google-chrome-stable
+```shell
+sudo apt-get install google-chrome-stable
 ```
 
-#### InKscape (Illustrator-like)
+## InKscape (Illustrator-like)
 
-```linux
-$ sudo apt-get install inkscape
+```shell
+sudo apt-get install inkscape
 ```
 
-#### Krita (Photoshop-like)
+## Krita (Photoshop-like)
 
-```linux
-$ sudo add-apt-repository ppa:kritalime/ppa
-$ sudo apt-get update
-$ sudo apt-get install krita
+```shell
+sudo add-apt-repository ppa:kritalime/ppa
+sudo apt-get update
+sudo apt-get install krita
 ```
 
-#### Movie player
+## Movie player
 
 Available on software manager.
 
-```linux
-$ sudo apt-get install mpv
+```shell
+sudo apt-get install mpv
 ```
 
-#### Node v8.x
+## Node v8.x
 
-```linux
-$ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-$ sudo apt-get install -y nodejs
+```shell
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y nodejs
 ```
 
-#### Specific cursors of mouse
+## Specific cursors of mouse
 
 Available on software manager.
 
-```linux
-$ sudo apt-get install breeze-cursor-theme
+```shell
+sudo apt-get install breeze-cursor-theme
 ```
 
-#### Steam
+## Steam
 
 Available on software manager.
 
-```linux
-$ sudo apt-get install steam
+```shell
+sudo apt-get install steam
 ```

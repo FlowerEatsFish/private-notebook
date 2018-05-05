@@ -1,6 +1,8 @@
-## Troubleshooting:
+# FAQ in PyLint
 
-#### To lint Python files using pep8 on Visual Studio Code
+## Troubleshooting
+
+### To lint Python files using pep8 on Visual Studio Code
 
 Add a user setting to enable pep8:
 
@@ -8,7 +10,7 @@ Add a user setting to enable pep8:
 "python.linting.pep8Enabled": true
 ```
 
-#### E1101: Module 'wx' has no '*' member
+### E1101: Module 'wx' has no '*' member
 
 [Reference](https://stackoverflow.com/questions/20553551/how-do-i-get-pylint-to-recognize-numpy-members)
 
