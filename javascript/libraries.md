@@ -72,6 +72,8 @@ babel-core
 
 babel-loader
 
+babel-polyfill
+
 babel-preset-env
 
 babel-preset-react
@@ -80,11 +82,15 @@ css-loader
 
 extract-text-webpack-plugin
 
+image-webpack-loader
+
 node-sass
 
 sass-loader
 
 style-loader
+
+url-loader
 
 webpack
 

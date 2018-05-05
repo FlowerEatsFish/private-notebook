@@ -7,13 +7,16 @@
   "devDependencies": {
     "babel-core": "*",
     "babel-loader": "*",
+    "babel-polyfill": "*",
     "babel-preset-env": "*",
     "babel-preset-react": "*",
     "css-loader": "*",
+    "image-webpack-loader": "*",
     "extract-text-webpack-plugin": "^3",
     "node-sass": "*",
     "sass-loader": "*",
     "style-loader": "*",
+    "url-loader": "*",
     "webpack": "^3"
   },
   "dependencies": {
@@ -47,6 +50,7 @@ const extractPlugin = new ExtractTextPlugin({
 module.exports = {
   watch: true,
   entry: {
+    polyfill: 'babel-polyfill',
     app: './src/master.jsx',
     react: ['react', 'react-dom', 'prop-types'],
     redux: ['redux', 'react-redux'],
@@ -81,11 +85,18 @@ module.exports = {
           ],
         }),
       },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/,
+        use: [
+          'url-loader',
+          'image-webpack-loader',
+        ],
+      },
     ],
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
-      name: ['redux', 'react'],
+      name: ['redux', 'react', 'polyfill'],
       filename: './js/[name].js',
     }),
     new webpack.DefinePlugin({
@@ -103,6 +114,7 @@ project
 ├─┬ dist
 │ ├─┬ js
 │ │ ├── bundle.js
+│ │ ├── polyfill.js
 │ │ ├── react.js
 │ │ └── redux.js
 │ └── bundle.css
