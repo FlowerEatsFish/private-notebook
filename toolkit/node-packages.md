@@ -44,11 +44,12 @@
 
   - mini-css-extract-plugin
   - webpack (version 4 / main)
+  - webpack-cli
 
 - Commands:
 
   ```shell
-  npm i -D mini-css-extract-plugin@latest webpack@4
+  npm i -D mini-css-extract-plugin@latest webpack@4 webpack-cli@latest
   ```
 
 [Top](#packagejson)
@@ -102,7 +103,7 @@
 - Commands:
 
   ```shell
-  npm i -P electron@16
+  npm i -P electron@latest
   ```
 
 [Top](#packagejson)
@@ -120,7 +121,7 @@
 - Commands:
 
   ```shell
-  npm i -P react@16 react-dom@16 prop-types@16 react-redux@latest redux@latest
+  npm i -P react@16 react-dom@16 prop-types@latest react-redux@latest redux@latest
   ```
 
 [Top](#packagejson)
