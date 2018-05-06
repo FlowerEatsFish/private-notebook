@@ -1,8 +1,15 @@
 # Web chart card
 
-- [IE-related issues](#ie-related-issues)
-
-- [Snippets](#snippets)
+- [Web chart card](#web-chart-card)
+  - [IE-related issues](#ie-related-issues)
+    - [ECMAScript 6 (or newest) support on Internet Explorer 9~11](#ecmascript-6-or-newest-support-on-internet-explorer-911)
+    - [The "oninput" event of HTML elements](#the-oninput-event-of-html-elements)
+    - [CSS grid layout](#css-grid-layout)
+  - [Safari-related issues](#safari-related-issues)
+    - [UX for scrolling](#ux-for-scrolling)
+  - [Snippets](#snippets)
+    - [Bouncing loader](#bouncing-loader)
+    - [Vertically and horizontally center text with CSS](#vertically-and-horizontally-center-text-with-css)
 
 ---
 
@@ -91,6 +98,22 @@ IE use old CSS grid layout, so the codes as follows are necessary:
     grid-template-rows: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr; /* support on IE */
     @include grid-ie-calc(6, $const-grid-gap ,3);
+  }
+  ```
+
+[Top](#web-chart-card)
+
+---
+
+## Safari-related issues
+
+### UX for scrolling
+
+- CSS:
+
+  ```css
+  .foo {
+    -webkit-overflow-scrolling: touch;
   }
   ```
 
