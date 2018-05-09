@@ -9,6 +9,9 @@
     - [UX for scrolling](#ux-for-scrolling)
   - [Snippets](#snippets)
     - [Bouncing loader](#bouncing-loader)
+    - [CSS for responsive web design (RWD)](#css-for-responsive-web-design-rwd)
+    - [Get URL parameters](#get-url-parameters)
+    - [Strip HTML tags](#strip-html-tags)
     - [Vertically and horizontally center text with CSS](#vertically-and-horizontally-center-text-with-css)
 
 ---
@@ -168,6 +171,68 @@ IE use old CSS grid layout, so the codes as follows are necessary:
   .bouncing-loader > div:nth-child(3) {
     animation-delay: 0.4s;
   }
+  ```
+
+[Top](#web-chart-card)
+
+### CSS for responsive web design (RWD)
+
+- The value of `man-width` attribute set as `N`, and The value of `min-width` attribute set as `N+1`.
+
+- CSS:
+
+  ```css
+  @media (min-width: 901px) {
+    .foo {
+      /* do somethings*/
+    }
+  }
+  @media (max-width: 900px) {
+    .foo {
+      /* do somethings*/
+    }
+  }
+  ```
+
+[Top](#web-chart-card)
+
+### Get URL parameters
+
+- Returns an object containing the parameters of the current URL.
+
+- ECMAScript:
+
+  ```javascript
+  const getURLParameters = url =>
+  (url.match(/([^?=&]+)(=([^&]*))/g) || []).reduce(
+    (a, v) => ((a[v.slice(0, v.indexOf('='))] = v.slice(v.indexOf('=') + 1)), a),
+    {}
+  );
+  ```
+
+- Exmaple:
+
+  ```javascript
+  getURLParameters('http://url.com/page?name=Adam&surname=Smith'); // {name: 'Adam', surname: 'Smith'}
+  getURLParameters('google.com'); // {}
+  ```
+
+[Top](#web-chart-card)
+
+### Strip HTML tags
+
+- Removes HTML/XML tags from string.
+
+- ECMAScript:
+
+  ```javascript
+  const stripHTMLTags = str => str.replace(/<[^>]*>/g, '');
+  ```
+
+- Exmaple:
+
+  ```javascript
+  stripHTMLTags('<p><em>lorem</em> <strong>ipsum</strong></p>'); // 'lorem ipsum'
   ```
 
 [Top](#web-chart-card)
