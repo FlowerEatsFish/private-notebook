@@ -1,253 +1,263 @@
 # Array chart card
 
-## Description
+- [Array chart card](#array-chart-card)
+  - [array.concat](#arrayconcat)
+  - [array.forEach](#arrayforeach)
+  - [array.includes](#arrayincludes)
+  - [array.indexOf](#arrayindexof)
+  - [Array.isArray](#arrayisarray)
+  - [array.length](#arraylength)
+  - [array.map](#arraymap)
+  - [array.reduce](#arrayreduce)
+  - [array.splice](#arraysplice)
 
-The JavaScript Array object is a global object that is used in the construction of arrays;which are high-level, list-like objects.
+## array.concat
 
-- [ ] Not used.
-- [x] Used.
+The concat() method is used to merge two or more arrays.
 
-## Methods
+This method does not change the existing arrays, but instead returns a new array.
 
----
+- Syntax:
 
-- [x] array.concat
-- The concat() method is used to merge two or more arrays.
-- This method does not change the existing arrays, but instead returns a new array.
+  ```javascript
+  var new_array = old_array.concat(value1[, value2[, ...[, valueN]]])
+  ```
 
-Syntax:
+- Examples:
 
-```javascript
-var new_array = old_array.concat(value1[, value2[, ...[, valueN]]])
-```
+  ```javascript
+  var num1 = [1, 2, 3],
+      num2 = [4, 5, 6],
+      num3 = [7, 8, 9];
 
-Examples:
+  var nums = num1.concat(num2, num3);
+  console.log(nums);
+  // results in [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  ```
 
-```javascript
-var num1 = [1, 2, 3],
-    num2 = [4, 5, 6],
-    num3 = [7, 8, 9];
+  ```javascript
+  var alpha = ['a', 'b', 'c'];
 
-var nums = num1.concat(num2, num3);
-console.log(nums);
-// results in [1, 2, 3, 4, 5, 6, 7, 8, 9]
-```
+  var alphaNumeric = alpha.concat(1, [2, 3]);
+  console.log(alphaNumeric);
+  // results in ['a', 'b', 'c', 1, 2, 3]
+  ```
 
-```javascript
-var alpha = ['a', 'b', 'c'];
+  ```javascript
+  var num1 = [[1]];
+  var num2 = [2, [3]];
 
-var alphaNumeric = alpha.concat(1, [2, 3]);
-console.log(alphaNumeric);
-// results in ['a', 'b', 'c', 1, 2, 3]
-```
+  var nums = num1.concat(num2);
+  console.log(nums);
+  // results in [[1], 2, [3]]
 
-```javascript
-var num1 = [[1]];
-var num2 = [2, [3]];
-
-var nums = num1.concat(num2);
-console.log(nums);
-// results in [[1], 2, [3]]
-
-// modify the first element of num1
-num1[0].push(4);
-console.log(nums);
-// results in [[1, 4], 2, [3]]
-```
-
----
-
-- [ ] array.copyWithin
-- [ ] array.entries
-- [ ] array.every
-- [ ] array.fill
-- [ ] array.filter
-- [ ] array.find
-- [ ] array.findIndex
+  // modify the first element of num1
+  num1[0].push(4);
+  console.log(nums);
+  // results in [[1, 4], 2, [3]]
+  ```
 
 ---
 
-- [x] array.forEach
-- The forEach() method executes a provided function once for each array element.
-
-Syntax:
-
-```javascript
-arr.forEach(function callback(currentValue, index, array) {
-    //your iterator
-}[, thisArg]);
-```
-
-Example:
-
-```javascript
-var a = ['a', 'b', 'c'];
-
-a.forEach(function(element) {
-    console.log(element);
-});
-
-// a
-// b
-// c
-```
+- array.copyWithin
+- array.entries
+- array.every
+- array.fill
+- array.filter
+- array.find
+- array.findIndex
 
 ---
 
-- [ ] Array.from
+## array.forEach
+
+The forEach() method executes a provided function once for each array element.
+
+- Syntax:
+
+  ```javascript
+  arr.forEach(function callback(currentValue, index, array) {
+      //your iterator
+  }[, thisArg]);
+  ```
+
+- Examples:
+
+  ```javascript
+  var a = ['a', 'b', 'c'];
+
+  a.forEach(function(element) {
+      console.log(element);
+  });
+
+  // a
+  // b
+  // c
+  ```
 
 ---
 
-- [x] array.includes
-- The includes() method determines whether an array includes a certain element, returning true or false as appropriate.
-- ECMAScript 2016. Don't support IE.
-
-Syntax:
-
-```javascript
-arr.includes(searchElement)
-arr.includes(searchElement, fromIndex)
-```
-
-Examples:
-
-```javascript
-[1, 2, 3].includes(2);    // true
-[1, 2, 3].includes(4);    // false
-[1, 2, 3].includes(3, 3); // false
-[1, 2, 3].includes(3, -1);// true
-[1, 2, NaN].includes(NaN);// true
-```
+- Array.from
 
 ---
 
-- [x] array.indexOf
-- The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+## array.includes
 
-Syntax:
+The includes() method determines whether an array includes a certain element, returning true or false as appropriate.
 
-```javascript
-arr.indexOf(searchElement[, fromIndex])
-```
+**ECMAScript 2016. Don't support IE.**
 
-Examples:
+- Syntax:
 
-```javascript
-var array = [2, 9, 9];
-array.indexOf(2);    // 0
-array.indexOf(7);    // -1
-array.indexOf(9, 2); // 2
-array.indexOf(2, -1);// -1
-array.indexOf(2, -3);// 0
-```
+  ```javascript
+  arr.includes(searchElement)
+  arr.includes(searchElement, fromIndex)
+  ```
 
----
+- Examples:
 
-- [x] Array.isArray
-- The Array.isArray() function determines whether the passed value is an Array.
-
-Syntax:
-
-```javascript
-Array.isArray(obj)
-```
-
-Examples:
-
-```javascript
-// all following calls return true
-Array.isArray([]);
-Array.isArray([1]);
-Array.isArray(new Array());
-// Little known fact: Array.prototype itself is an array:
-Array.isArray(Array.prototype);
-
-// all following calls return false
-Array.isArray();
-Array.isArray({});
-Array.isArray(null);
-Array.isArray(undefined);
-Array.isArray(17);
-Array.isArray('Array');
-Array.isArray(true);
-Array.isArray(false);
-Array.isArray({ __proto__: Array.prototype });
-```
+  ```javascript
+  [1, 2, 3].includes(2);    // true
+  [1, 2, 3].includes(4);    // false
+  [1, 2, 3].includes(3, 3); // false
+  [1, 2, 3].includes(3, -1);// true
+  [1, 2, NaN].includes(NaN);// true
+  ```
 
 ---
 
-- [ ] array.join
-- [ ] array.keys
-- [ ] array.lastIndexOf
+## array.indexOf
+
+The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+
+- Syntax:
+
+  ```javascript
+  arr.indexOf(searchElement[, fromIndex])
+  ```
+
+- Examples:
+
+  ```javascript
+  var array = [2, 9, 9];
+  array.indexOf(2);    // 0
+  array.indexOf(7);    // -1
+  array.indexOf(9, 2); // 2
+  array.indexOf(2, -1);// -1
+  array.indexOf(2, -3);// 0
+  ```
 
 ---
 
-- [x] Array.length
-- The length property of an object which is an instance of type Array sets or returns the number of elements in that array.
-- The value is an unsigned, 32-bit integer that is always numerically greater than the highest index in the array.
+## Array.isArray
 
-Examples:
+The Array.isArray() function determines whether the passed value is an Array.
 
-```javascript
-var items = ['shoes', 'shirts', 'socks', 'sweaters'];
-items.length;
+- Syntax:
 
-// returns 4
-```
+  ```javascript
+  Array.isArray(obj)
+  ```
 
----
+- Examples:
 
-- [x] array.map
-- The map() method creates a new array with the results of calling a provided function on every element in the calling array.
+  ```javascript
+  // all following calls return true
+  Array.isArray([]);
+  Array.isArray([1]);
+  Array.isArray(new Array());
+  // Little known fact: Array.prototype itself is an array:
+  Array.isArray(Array.prototype);
 
-Syntax:
-
-```javascript
-var new_array = arr.map(function callback(currentValue, index, array) {
-    // Return element for new_array
-}[, thisArg])
-```
-
-Examples:
-
-```javascript
-var numbers = [1, 5, 10, 15];
-var doubles = numbers.map(function(x) {
-   return x * 2;
-});
-// doubles is now [2, 10, 20, 30]
-// numbers is still [1, 5, 10, 15]
-
-var numbers = [1, 4, 9];
-var roots = numbers.map(Math.sqrt);
-// roots is now [1, 2, 3]
-// numbers is still [1, 4, 9]
-```
-
-```javascript
-var kvArray = [{key: 1, value: 10},
-               {key: 2, value: 20},
-               {key: 3, value: 30}];
-
-var reformattedArray = kvArray.map(function(obj) {
-   var rObj = {};
-   rObj[obj.key] = obj.value;
-   return rObj;
-});
-
-// reformattedArray is now [{1: 10}, {2: 20}, {3: 30}],
-
-// kvArray is still:
-// [{key: 1, value: 10},
-//  {key: 2, value: 20},
-//  {key: 3, value: 30}]
-```
+  // all following calls return false
+  Array.isArray();
+  Array.isArray({});
+  Array.isArray(null);
+  Array.isArray(undefined);
+  Array.isArray(17);
+  Array.isArray('Array');
+  Array.isArray(true);
+  Array.isArray(false);
+  Array.isArray({ __proto__: Array.prototype });
+  ```
 
 ---
 
-- [ ] Array.of
-- [ ] array.pop
-- [ ] Array.prototype
+- array.join
+- array.keys
+- array.lastIndexOf
+
+---
+
+## array.length
+
+The length property of an object which is an instance of type Array sets or returns the number of elements in that array.
+
+The value is an unsigned, 32-bit integer that is always numerically greater than the highest index in the array.
+
+- Examples:
+
+  ```javascript
+  var items = ['shoes', 'shirts', 'socks', 'sweaters'];
+  items.length;
+
+  // returns 4
+  ```
+
+---
+
+## array.map
+
+The map() method creates a new array with the results of calling a provided function on every element in the calling array.
+
+- Syntax:
+
+  ```javascript
+  var new_array = arr.map(function callback(currentValue, index, array) {
+      // Return element for new_array
+  }[, thisArg])
+  ```
+
+- Examples:
+
+  ```javascript
+  var numbers = [1, 5, 10, 15];
+  var doubles = numbers.map(function(x) {
+    return x * 2;
+  });
+  // doubles is now [2, 10, 20, 30]
+  // numbers is still [1, 5, 10, 15]
+
+  var numbers = [1, 4, 9];
+  var roots = numbers.map(Math.sqrt);
+  // roots is now [1, 2, 3]
+  // numbers is still [1, 4, 9]
+  ```
+
+  ```javascript
+  var kvArray = [{key: 1, value: 10},
+                {key: 2, value: 20},
+                {key: 3, value: 30}];
+
+  var reformattedArray = kvArray.map(function(obj) {
+    var rObj = {};
+    rObj[obj.key] = obj.value;
+    return rObj;
+  });
+
+  // reformattedArray is now [{1: 10}, {2: 20}, {3: 30}],
+
+  // kvArray is still:
+  // [{key: 1, value: 10},
+  //  {key: 2, value: 20},
+  //  {key: 3, value: 30}]
+  ```
+
+---
+
+- Array.of
+- array.pop
+- Array.prototype
 
 ---
 
@@ -273,15 +283,70 @@ console.log(numbers);// [1, 2, 3, 4, 5, 6, 7]
 
 ---
 
-- [ ] array.reduce
-- [ ] array.reduceRight
-- [ ] array.reverse
-- [ ] array.shift
-- [ ] array.slice
-- [ ] array.some
-- [ ] array.sort
-- [ ] array.splice
-- [ ] array.toLocaleString
-- [ ] array.toString
-- [ ] array.unshift
-- [ ] array.values
+## array.reduce
+
+The reduce() method applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value.
+
+- Syntax:
+
+  ```javascript
+  arr.reduce(callback[, initialValue])
+  ```
+
+- Examples:
+
+  ```javascript
+  const array1 = [1, 2, 3, 4];
+  const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+  // 1 + 2 + 3 + 4
+  console.log(array1.reduce(reducer));
+  // expected output: 10
+
+  // 5 + 1 + 2 + 3 + 4
+  console.log(array1.reduce(reducer, 5));
+  // expected output: 15
+  ```
+
+---
+
+- array.reduceRight
+- array.reverse
+- array.shift
+- array.slice
+- array.some
+- array.sort
+
+---
+
+## array.splice
+
+The slice() method returns a shallow copy of a portion of an array into a new array object selected from begin to end (end not included). The original array will not be modified.
+
+- Syntax:
+
+  ```javascript
+  arr.slice([begin[, end]])
+  ```
+
+- Examples:
+
+  ```javascript
+  var animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+
+  console.log(animals.slice(2));
+  // expected output: Array ["camel", "duck", "elephant"]
+
+  console.log(animals.slice(2, 4));
+  // expected output: Array ["camel", "duck"]
+
+  console.log(animals.slice(1, 5));
+  // expected output: Array ["bison", "camel", "duck", "elephant"]
+  ```
+
+---
+
+- array.toLocaleString
+- array.toString
+- array.unshift
+- array.values
