@@ -2,6 +2,8 @@
 
 - [Array chart card](#array-chart-card)
   - [array.concat](#arrayconcat)
+  - [array.every](#arrayevery)
+  - [array.filter](#arrayfilter)
   - [array.forEach](#arrayforeach)
   - [array.includes](#arrayincludes)
   - [array.indexOf](#arrayindexof)
@@ -61,9 +63,71 @@ This method does not change the existing arrays, but instead returns a new array
 
 - array.copyWithin
 - array.entries
-- array.every
+
+---
+
+## array.every
+
+The every() method tests whether all elements in the array pass the test implemented by the provided function.
+
+- Syntax:
+
+  ```javascript
+  arr.every(callback[, thisArg])
+  ```
+
+- Examples:
+
+  ```javascript
+  function isBigEnough(element, index, array) {
+    return element >= 10;
+  }
+  
+  [12, 5, 8, 130, 44].every(isBigEnough);   // false
+  [12, 54, 18, 130, 44].every(isBigEnough); // true
+  ```
+
+---
+
 - array.fill
-- array.filter
+
+---
+
+## array.filter
+
+The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+
+- Syntax:
+
+  ```javascript
+  var newArray = arr.filter(callback(currentValue[, index[, array]])[, thisArg])
+  ```
+
+- Examples:
+
+  ```javascript
+  function isBigEnough(value) {
+    return value >= 10;
+  }
+
+  var filtered = [12, 5, 8, 130, 44].filter(isBigEnough); // [12, 130, 44]
+  ```
+
+  ```javascript
+  var fruits = ['apple', 'banana', 'grapes', 'mango', 'orange'];
+
+  function filterItems(query) {
+    return fruits.filter(function(el) {
+        return el.toLowerCase().indexOf(query.toLowerCase()) > -1;
+    })
+  }
+
+  console.log(filterItems('ap')); // ['apple', 'grapes']
+  console.log(filterItems('an')); // ['banana', 'mango', 'orange']
+  ```
+
+---
+
 - array.find
 - array.findIndex
 
