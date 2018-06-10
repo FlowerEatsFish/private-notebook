@@ -10,8 +10,13 @@
   - [Array.isArray](#arrayisarray)
   - [array.length](#arraylength)
   - [array.map](#arraymap)
+  - [array.pop](#arraypop)
+  - [array.push](#arraypush)
   - [array.reduce](#arrayreduce)
-  - [array.splice](#arraysplice)
+  - [array.shift](#arrayshift)
+  - [array.slice](#arrayslice)
+  - [array.toString](#arraytoString)
+  - [array.unshift](#arrayunshift)
 
 ## array.concat
 
@@ -33,16 +38,14 @@ This method does not change the existing arrays, but instead returns a new array
       num3 = [7, 8, 9];
 
   var nums = num1.concat(num2, num3);
-  console.log(nums);
-  // results in [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  console.log(nums); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
   ```
 
   ```javascript
   var alpha = ['a', 'b', 'c'];
 
   var alphaNumeric = alpha.concat(1, [2, 3]);
-  console.log(alphaNumeric);
-  // results in ['a', 'b', 'c', 1, 2, 3]
+  console.log(alphaNumeric); // ['a', 'b', 'c', 1, 2, 3]
   ```
 
   ```javascript
@@ -50,13 +53,11 @@ This method does not change the existing arrays, but instead returns a new array
   var num2 = [2, [3]];
 
   var nums = num1.concat(num2);
-  console.log(nums);
-  // results in [[1], 2, [3]]
+  console.log(nums); // [[1], 2, [3]]
 
   // modify the first element of num1
   num1[0].push(4);
-  console.log(nums);
-  // results in [[1, 4], 2, [3]]
+  console.log(nums); // [[1, 4], 2, [3]]
   ```
 
 ---
@@ -83,7 +84,7 @@ The every() method tests whether all elements in the array pass the test impleme
     return element >= 10;
   }
   
-  [12, 5, 8, 130, 44].every(isBigEnough);   // false
+  [12, 5, 8, 130, 44].every(isBigEnough); // false
   [12, 54, 18, 130, 44].every(isBigEnough); // true
   ```
 
@@ -118,7 +119,7 @@ The filter() method creates a new array with all elements that pass the test imp
 
   function filterItems(query) {
     return fruits.filter(function(el) {
-        return el.toLowerCase().indexOf(query.toLowerCase()) > -1;
+      return el.toLowerCase().indexOf(query.toLowerCase()) > -1;
     })
   }
 
@@ -141,7 +142,7 @@ The forEach() method executes a provided function once for each array element.
 
   ```javascript
   arr.forEach(function callback(currentValue, index, array) {
-      //your iterator
+    //your iterator
   }[, thisArg]);
   ```
 
@@ -151,7 +152,7 @@ The forEach() method executes a provided function once for each array element.
   var a = ['a', 'b', 'c'];
 
   a.forEach(function(element) {
-      console.log(element);
+    console.log(element);
   });
 
   // a
@@ -181,11 +182,11 @@ The includes() method determines whether an array includes a certain element, re
 - Examples:
 
   ```javascript
-  [1, 2, 3].includes(2);    // true
-  [1, 2, 3].includes(4);    // false
+  [1, 2, 3].includes(2); // true
+  [1, 2, 3].includes(4); // false
   [1, 2, 3].includes(3, 3); // false
-  [1, 2, 3].includes(3, -1);// true
-  [1, 2, NaN].includes(NaN);// true
+  [1, 2, 3].includes(3, -1); // true
+  [1, 2, NaN].includes(NaN); // true
   ```
 
 ---
@@ -204,11 +205,11 @@ The indexOf() method returns the first index at which a given element can be fou
 
   ```javascript
   var array = [2, 9, 9];
-  array.indexOf(2);    // 0
-  array.indexOf(7);    // -1
+  array.indexOf(2); // 0
+  array.indexOf(7); // -1
   array.indexOf(9, 2); // 2
-  array.indexOf(2, -1);// -1
-  array.indexOf(2, -3);// 0
+  array.indexOf(2, -1); // -1
+  array.indexOf(2, -3); // 0
   ```
 
 ---
@@ -230,6 +231,7 @@ The Array.isArray() function determines whether the passed value is an Array.
   Array.isArray([]);
   Array.isArray([1]);
   Array.isArray(new Array());
+
   // Little known fact: Array.prototype itself is an array:
   Array.isArray(Array.prototype);
 
@@ -263,9 +265,7 @@ The value is an unsigned, 32-bit integer that is always numerically greater than
 
   ```javascript
   var items = ['shoes', 'shirts', 'socks', 'sweaters'];
-  items.length;
-
-  // returns 4
+  console.log(items.length); // 4
   ```
 
 ---
@@ -278,7 +278,7 @@ The map() method creates a new array with the results of calling a provided func
 
   ```javascript
   var new_array = arr.map(function callback(currentValue, index, array) {
-      // Return element for new_array
+    // Return element for new_array
   }[, thisArg])
   ```
 
@@ -300,8 +300,8 @@ The map() method creates a new array with the results of calling a provided func
 
   ```javascript
   var kvArray = [{key: 1, value: 10},
-                {key: 2, value: 20},
-                {key: 3, value: 30}];
+                 {key: 2, value: 20},
+                 {key: 3, value: 30}];
 
   var reformattedArray = kvArray.map(function(obj) {
     var rObj = {};
@@ -320,30 +320,55 @@ The map() method creates a new array with the results of calling a provided func
 ---
 
 - Array.of
-- array.pop
+
+---
+
+## array.pop
+
+The pop() method removes the last element from an array and returns that element. This method changes the length of the array.
+
+- Syntax:
+
+  ```javascript
+  arr.pop()
+  ```
+
+- Examples:
+
+  ```javascript
+  var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+  var popped = myFish.pop();
+
+  console.log(myFish); // ['angel', 'clown', 'mandarin' ]
+  console.log(popped); // 'sturgeon'
+  ```
+
+---
+
 - Array.prototype
 
 ---
 
-- [x] array.push
-- The push() method adds one or more elements to the end of an array and returns the new length of the array.
+## array.push
 
-Syntax:
+The push() method adds one or more elements to the end of an array and returns the new length of the array.
 
-```javascript
-arr.push([element1[, ...[, elementN]]])
-```
+- Syntax:
 
-Examples:
+  ```javascript
+  arr.push([element1[, ...[, elementN]]])
+  ```
 
-```javascript
-var numbers = [1, 2, 3];
-numbers.push(4);
-console.log(numbers);// [1, 2, 3, 4]
+- Examples:
 
-numbers.push(5, 6, 7);
-console.log(numbers);// [1, 2, 3, 4, 5, 6, 7]
-```
+  ```javascript
+  var numbers = [1, 2, 3];
+  numbers.push(4);
+  console.log(numbers); // [1, 2, 3, 4]
+
+  numbers.push(5, 6, 7);
+  console.log(numbers); // [1, 2, 3, 4, 5, 6, 7]
+  ```
 
 ---
 
@@ -364,26 +389,43 @@ The reduce() method applies a function against an accumulator and each element i
   const reducer = (accumulator, currentValue) => accumulator + currentValue;
 
   // 1 + 2 + 3 + 4
-  console.log(array1.reduce(reducer));
-  // expected output: 10
+  console.log(array1.reduce(reducer)); // 10
 
   // 5 + 1 + 2 + 3 + 4
-  console.log(array1.reduce(reducer, 5));
-  // expected output: 15
+  console.log(array1.reduce(reducer, 5)); // 15
   ```
 
 ---
 
 - array.reduceRight
 - array.reverse
-- array.shift
-- array.slice
-- array.some
-- array.sort
 
 ---
 
-## array.splice
+## array.shift
+
+The shift() method removes the first element from an array and returns that removed element. This method changes the length of the array.
+
+- Syntax:
+
+  ```javascript
+  arr.shift()
+  ```
+
+- Examples:
+
+  ```javascript
+  var myFish = ['angel', 'clown', 'mandarin', 'surgeon'];
+  console.log('myFish before:', JSON.stringify(myFish)); // myFish before: ['angel', 'clown', 'mandarin', 'surgeon']
+
+  var shifted = myFish.shift();
+  console.log('myFish after:', myFish); // myFish after: ['clown', 'mandarin', 'surgeon']
+  console.log('Removed this element:', shifted); // Removed this element: angel
+  ```
+
+---
+
+## array.slice
 
 The slice() method returns a shallow copy of a portion of an array into a new array object selected from begin to end (end not included). The original array will not be modified.
 
@@ -398,19 +440,65 @@ The slice() method returns a shallow copy of a portion of an array into a new ar
   ```javascript
   var animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
 
-  console.log(animals.slice(2));
-  // expected output: Array ["camel", "duck", "elephant"]
-
-  console.log(animals.slice(2, 4));
-  // expected output: Array ["camel", "duck"]
-
-  console.log(animals.slice(1, 5));
-  // expected output: Array ["bison", "camel", "duck", "elephant"]
+  console.log(animals.slice(2)); // expected output: Array ["camel", "duck", "elephant"]
+  console.log(animals.slice(2, 4)); // expected output: Array ["camel", "duck"]
+  console.log(animals.slice(1, 5)); // expected output: Array ["bison", "camel", "duck", "elephant"]
   ```
 
 ---
 
+- array.some
+- array.sort
+- array.splice
 - array.toLocaleString
-- array.toString
-- array.unshift
+
+---
+
+## array.toString
+
+The toString() method returns a string representing the specified array and its elements.
+
+- Syntax:
+
+  ```javascript
+  arr.toString()
+  ```
+
+- Examples:
+
+  ```javascript
+  var array1 = [1, 2, 'a', '1a'];
+
+  console.log(array1.toString()); // expected output: "1,2,a,1a"
+  ```
+
+---
+
+## array.unshift
+
+The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.
+
+- Syntax:
+
+  ```javascript
+  arr.unshift(element1[, ...[, elementN]])
+  ```
+
+- Examples:
+
+  ```javascript
+  var arr = [1, 2];
+
+  arr.unshift(0); // result of call is 3, the new array length
+  // arr is [0, 1, 2]
+
+  arr.unshift(-2, -1); // = 5
+  // arr is [-2, -1, 0, 1, 2]
+
+  arr.unshift([-3]);
+  // arr is [[-3], -2, -1, 0, 1, 2]
+  ```
+
+---
+
 - array.values
