@@ -1,5 +1,7 @@
 # ./package.json
 
+<!-- TOC -->
+
 - [./package.json](#packagejson)
   - [Global](#global)
     - [ESlint-related packages](#eslint-related-packages)
@@ -11,6 +13,8 @@
     - [Electron-related packages](#electron-related-packages)
     - [React-related packages](#react-related-packages)
     - [XMLHttpRequests](#xmlhttprequests)
+
+<!-- /TOC -->
 
 ---
 

@@ -1,5 +1,19 @@
 # Software list
 
+<!-- TOC -->
+
+- [Software list](#software-list)
+  - [Chinese input (gcin)](#chinese-input-gcin)
+  - [Google chrome](#google-chrome)
+  - [InKscape (Illustrator-like)](#inkscape-illustrator-like)
+  - [Krita (Photoshop-like)](#krita-photoshop-like)
+  - [Movie player](#movie-player)
+  - [Node v8.x](#node-v8x)
+  - [Specific cursors of mouse](#specific-cursors-of-mouse)
+  - [Steam](#steam)
+
+<!-- /TOC -->
+
 ## Chinese input (gcin)
 
 Available on software manager.

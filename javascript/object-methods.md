@@ -1,8 +1,12 @@
 # Object chart card
 
+<!-- TOC -->
+
 - [Object chart card](#object-chart-card)
   - [object.assign](#objectassign)
   - [object.keys](#objectkeys)
+
+<!-- /TOC -->
 
 ## object.assign
 

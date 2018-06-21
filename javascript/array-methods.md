@@ -1,5 +1,7 @@
 # Array chart card
 
+<!-- TOC -->
+
 - [Array chart card](#array-chart-card)
   - [array.concat](#arrayconcat)
   - [array.every](#arrayevery)
@@ -15,8 +17,10 @@
   - [array.reduce](#arrayreduce)
   - [array.shift](#arrayshift)
   - [array.slice](#arrayslice)
-  - [array.toString](#arraytoString)
+  - [array.toString](#arraytostring)
   - [array.unshift](#arrayunshift)
+
+<!-- /TOC -->
 
 ## array.concat
 

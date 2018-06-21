@@ -1,5 +1,7 @@
 # Web chart card
 
+<!-- TOC -->
+
 - [Web chart card](#web-chart-card)
   - [IE-related issues](#ie-related-issues)
     - [ECMAScript 6 (or newest) support on Internet Explorer 9~11](#ecmascript-6-or-newest-support-on-internet-explorer-911)
@@ -13,6 +15,8 @@
     - [Get URL parameters](#get-url-parameters)
     - [Strip HTML tags](#strip-html-tags)
     - [Vertically and horizontally center text with CSS](#vertically-and-horizontally-center-text-with-css)
+
+<!-- /TOC -->
 
 ---
 

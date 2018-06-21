@@ -1,5 +1,7 @@
 # ECMAScript chart card
 
+<!-- TOC -->
+
 - [ECMAScript chart card](#ecmascript-chart-card)
   - [Array snippets](#array-snippets)
     - [Chunk](#chunk)
@@ -36,6 +38,8 @@
     - [Yes or no](#yes-or-no)
   - [Type snippets](#type-snippets)
     - [Is nil](#is-nil)
+
+<!-- /TOC -->
 
 ---
 
