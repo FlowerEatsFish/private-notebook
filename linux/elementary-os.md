@@ -6,11 +6,9 @@
   - [Partitions](#partitions)
   - [First step (required)](#first-step-required)
   - [Dark theme](#dark-theme)
-  - [Input method (gcin)](#input-method-gcin)
-  - [New cursor (breeze cursor theme)](#new-cursor-breeze-cursor-theme)
-  - [Node v8.x](#node-v8x)
-  - [Install packages by "apt-get" command](#install-packages-by-apt-get-command)
-  - [.deb packages](#deb-packages)
+  - [To install packages as follows by "AppCenter"](#to-install-packages-as-follows-by-appcenter)
+  - [Install packages by terminal](#install-packages-by-terminal)
+  - [.deb package commands](#deb-package-commands)
   - [To remove leftover "emacs" app after press "sudo apt autoremove --purge emacs"](#to-remove-leftover-emacs-app-after-press-sudo-apt-autoremove---purge-emacs)
 
 <!-- /TOC -->
@@ -43,43 +41,25 @@
 
 - Go to "Settings" -> "Tweaks" -> "Prefer darker variant".
 
-## Input method (gcin)
+## To install packages as follows by "AppCenter"
 
-- Command to get Chinese input "gcin":
+- Eddy (Simple debian package installer)
 
-  ```shell
-  sudo apt-get install gcin
-  ```
+- gcin Tools (Chinese input method)
 
-- Command to set input method:
+  - Command to set input method:
 
-  ```shell
-  im-config
-  ```
+    ```shell
+    im-config
+    ```
 
-## New cursor (breeze cursor theme)
+- NVIDIA X Server Settings (Graphics card)
 
-- To install "Tweaks" app following [dark theme](#dark-theme) steps.
+- Vim (Text editor in terminal)
 
-- Commands to get "Breeze Cursor Theme" cursor:
+- Steam (Games center)
 
-  ```shell
-  sudo apt-get install breeze-cursor-theme
-  ```
-
-- To go to "Settings" -> "Tweaks" -> "Cursor".
-
-## Node v8.x
-
-- Commands to get Node on version 8:
-
-  ```shell
-  curl -sL https://deb.nodesource.com/setup_8.x
-  sudo -E bash -
-  sudo apt-get install nodejs
-  ```
-
-## Install packages by "apt-get" command
+## Install packages by terminal
 
 - Git:
 
@@ -89,23 +69,31 @@
   $ sudo apt-get update
 
   $ sudo apt-get install git
-
-  $ sudo apt-get install steam
   ```
 
-- Steam:
+- Node v8.x
 
-  ```shell
-  sudo apt-get install steam
-  ```
+  - Commands to get Node on version 8:
 
-- Vim:
+    ```shell
+    curl -sL https://deb.nodesource.com/setup_8.x
+    sudo -E bash -
+    sudo apt-get install nodejs
+    ```
 
-  ```shell
-  sudo apt-get install steam
-  ```
+- New cursor (breeze cursor theme)
 
-## .deb packages
+  1. To install "Tweaks" app following [dark theme](#dark-theme) steps.
+
+  2. Commands to get "Breeze Cursor Theme" cursor:
+
+      ```shell
+      sudo apt-get install breeze-cursor-theme
+      ```
+
+  3. To go to "Settings" -> "Tweaks" -> "Cursor".
+
+## .deb package commands
 
 - Commands:
 
@@ -153,7 +141,7 @@
   1. To check how many emacs-related packages stay:
 
      ```shell
-     username@hostname:~$ dpkg -l | grep emacs
+     $ dpkg -l | grep emacs
      ii  emacs                    46.1               all    GNU Emacs editor (metapackage)
      ii  emacs24                  24.5+1-6ubuntu1.1  amd64  GNU Emacs editor (with GTK+ GUI support)
      ii  emacs24-bin-common       24.5+1-6ubuntu1.1  amd64  GNU Emacs editor's shared, architecture dependent files
