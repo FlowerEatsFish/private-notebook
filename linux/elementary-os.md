@@ -15,13 +15,15 @@
 
 ## Partitions
 
-| No. | Priority     | Path  | Format                  | Type    | Volumns (256 GB) |
-|-----|--------------|-------|-------------------------|---------|------------------|
-| 1   | Optional     | x     | Reserved BIOS boot area | Primary | 50 MB            |
-| 2   | **Required** | /boot | ext4                    | Primary | 4,000 MB         |
-| 3   | **Required** | /     | ext4                    | Primary | 248,000 MB       |
-| 4   | Optional     | /home | ext4                    | Primary | none             |
-| 5   | **Required** | swap  | x                       | Logical | 4,000 MB         |
+```text
+| No. | Priority | Path  | Format                  | Type    | Volumns (256 GB) |
+|-----|----------|-------|-------------------------|---------|------------------|
+| 1   | Optional | x     | Reserved BIOS boot area | Primary | 50 MB            |
+| 2   | Required | /boot | ext4                    | Primary | 4,000 MB         |
+| 3   | Required | /     | ext4                    | Primary | 248,000 MB       |
+| 4   | Optional | /home | ext4                    | Primary | none             |
+| 5   | Required | swap  | x                       | Logical | 4,000 MB         |
+```
 
 ## First step (required)
 
@@ -43,6 +45,8 @@
 
 ## To install packages as follows by "AppCenter"
 
+- Bottles (To run Windows program if it is required)
+
 - Eddy (Simple debian package installer)
 
 - gcin Tools (Chinese input method)
@@ -55,9 +59,9 @@
 
 - NVIDIA X Server Settings (Graphics card)
 
-- Vim (Text editor in terminal)
-
 - Steam (Games center)
+
+- Vim (Text editor in terminal)
 
 ## Install packages by terminal
 
