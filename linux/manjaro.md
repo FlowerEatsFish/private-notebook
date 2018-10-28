@@ -69,13 +69,46 @@ Manjaro Linux is a new linux distribution which is based on Arch linux.
   $ git clone https://aur.archlinux.org/google-chrome.git
   $ cd google-chrome/
 
-  # To build a package file for pacman package manager from these files.
-  $ makepkg -s
-
-  # To install Google Chrome.
-  $ sudo pacman -U google-chrome-63.0.3239.108-1-x86_64.pkg.tar.xz
+  # To build and install a package file for pacman package manager from these files.
+  $ makepkg -si
+  
+  # To set Google Chrome as default browser.
+  # KDE Plasma -> System Settings -> Applications -> File Associations -> application/xhtml+xml
+  # Set "Google Chrome" as primary order.
   ```
 
+- Discord
+
+  ```shell
+  # To install its dependencies.
+  $ git clone https://aur.archlinux.org/libc++.git
+  $ cd libc++
+  
+  # To make validation.
+  $ gpg --recv-keys 0FC3042E345AD05D
+
+  $ makepkg -si
+
+  # Main package.
+  $ git clone https://aur.archlinux.org/discord.git
+  $ cd discord
+  $ makepkg -si
+  ```
+
+- WPS Office
+
+  ```shell
+  # Main package.
+  $ git clone https://aur.archlinux.org/wps-office.git
+  $ cd wps-office
+  $ makepkg -si
+
+  # To install Microsoft-related fonts.
+  $ git clone https://aur.archlinux.org/ttf-wps-fonts.git
+  $ cd ttf-wps-fonts
+  $ makepkg -si
+  ```
+ 
 ## To remove packages with associated libraries
 
 ```shell
