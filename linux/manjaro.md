@@ -114,3 +114,15 @@ Manjaro Linux is a new linux distribution which is based on Arch linux.
 ```shell
 sudo pacman -Rs [package name]
 ```
+
+- Microsoft Office Online
+
+  ```shell
+  sudo pacman -Rs ms-office-online
+  ```
+
+- Libre Office - Fresh Edition
+
+  ```shell
+  sudo pacman -Rs libreoffice-fresh
+  ```
