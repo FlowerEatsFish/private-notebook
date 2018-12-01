@@ -20,8 +20,8 @@
 |-----|----------|-------|-------------------------|---------|------------------|
 | 1   | Optional | x     | Reserved BIOS boot area | Primary | 50 MB            |
 | 2   | Required | /boot | ext4                    | Primary | 4,000 MB         |
-| 3   | Required | /     | ext4                    | Primary | 248,000 MB       |
-| 4   | Optional | /home | ext4                    | Primary | none             |
+| 3   | Required | /     | ext4                    | Primary | 124,000 MB       |
+| 4   | Optional | /home | ext4                    | Primary | 124,000 MB       |
 | 5   | Required | swap  | x                       | Logical | 4,000 MB         |
 ```
 
