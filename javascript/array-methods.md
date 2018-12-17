@@ -1,8 +1,8 @@
-# Array chart card
+# Array cheat sheet
 
 <!-- TOC -->
 
-- [Array chart card](#array-chart-card)
+- [Array cheat sheet](#array-cheat-sheet)
   - [array.concat](#arrayconcat)
   - [array.every](#arrayevery)
   - [array.filter](#arrayfilter)

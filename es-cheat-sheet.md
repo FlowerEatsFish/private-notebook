@@ -1,8 +1,8 @@
-# ECMAScript chart card
+# ECMAScript cheat sheet
 
 <!-- TOC -->
 
-- [ECMAScript chart card](#ecmascript-chart-card)
+- [ECMAScript cheat sheet](#ecmascript-cheat-sheet)
   - [Array snippets](#array-snippets)
     - [Chunk](#chunk)
     - [Compact](#compact)
@@ -62,7 +62,7 @@ const chunk = (arr, size) =>
 chunk([1, 2, 3, 4, 5], 2); // [[1,2],[3,4],[5]]
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ### Compact
 
@@ -78,7 +78,7 @@ const compact = arr => arr.filter(Boolean);
 compact([0, 1, false, 2, '', 3, 'a', 'e' * 23, NaN, 's', 34]); // [ 1, 2, 3, 'a', 's', 34 ]
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ### Deep flatten
 
@@ -94,7 +94,7 @@ const deepFlatten = arr => [].concat(...arr.map(v => (Array.isArray(v) ? deepFla
 deepFlatten([1, [2], [[3], 4], 5]); // [1,2,3,4,5]
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ### Difference
 
@@ -113,7 +113,7 @@ const difference = (a, b) => {
 difference([1, 2, 3], [1, 2, 4]); // [3]
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ### Drop
 
@@ -131,7 +131,7 @@ drop([1, 2, 3], 2); // [3]
 drop([1, 2, 3], 42); // []
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ### Permutations
 
@@ -158,7 +158,7 @@ const permutations = arr => {
 permutations([1, 33, 5]); // [ [ 1, 33, 5 ], [ 1, 5, 33 ], [ 33, 1, 5 ], [ 33, 5, 1 ], [ 5, 1, 33 ], [ 5, 33, 1 ] ]
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ### Shuffle
 
@@ -182,7 +182,7 @@ const foo = [1, 2, 3];
 shuffle(foo); // [2,3,1], foo = [1,2,3]
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ### Similarity
 
@@ -198,7 +198,7 @@ const similarity = (arr, values) => arr.filter(v => values.includes(v));
 similarity([1, 2, 3], [1, 2, 4]); // [1,2]
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ---
 
@@ -222,7 +222,7 @@ async function sleepyWork() {
 }
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ---
 
@@ -242,7 +242,7 @@ const isDivisible = (dividend, divisor) => dividend % divisor === 0;
 isDivisible(6, 3); // true
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ### Is even
 
@@ -258,7 +258,7 @@ const isEven = num => num % 2 === 0;
 isEven(3); // false
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ### Is prime
 
@@ -278,7 +278,7 @@ const isPrime = num => {
 isPrime(11); // true
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ### Primes
 
@@ -300,7 +300,7 @@ const primes = num => {
 primes(10); // [2,3,5,7]
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ### Random int array in range
 
@@ -317,7 +317,7 @@ const randomIntArrayInRange = (min, max, n = 1) =>
 randomIntArrayInRange(12, 35, 10); // [ 34, 14, 27, 17, 30, 27, 20, 26, 21, 14 ]
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ### Round
 
@@ -333,7 +333,7 @@ const round = (n, decimals = 0) => Number(`${Math.round(`${n}e${decimals}`)}e-${
 round(1.005, 2); // 1.01
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ### Sum
 
@@ -349,7 +349,7 @@ const sum = (...arr) => [...arr].reduce((acc, val) => acc + val, 0);
 sum(...[1, 2, 3, 4]); // 10
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ---
 
@@ -369,7 +369,7 @@ const atob = str => new Buffer(str, 'base64').toString('binary');
 atob('Zm9vYmFy'); // 'foobar'
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ### Btoa
 
@@ -385,7 +385,7 @@ const btoa = str => new Buffer(str, 'binary').toString('base64');
 btoa('foobar'); // 'Zm9vYmFy'
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ---
 
@@ -410,7 +410,7 @@ const myObj = { Name: 'Adam', sUrnAME: 'Smith' };
 const myObjLower = lowercaseKeys(myObj); // {name: 'Adam', surname: 'Smith'};
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ### Merge
 
@@ -443,7 +443,7 @@ const other = {
 merge(object, other); // { a: [ { x: 2 }, { y: 4 }, { z: 3 } ], b: [ 1, 2, 3 ], c: 'foo' }
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ### Nest
 
@@ -470,7 +470,7 @@ const comments = [
 const nestedComments = nest(comments); // [{ id: 1, parent_id: null, children: [...] }]
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ### Pick
 
@@ -487,7 +487,7 @@ const pick = (obj, arr) =>
 pick({ a: 1, b: '2', c: 3 }, ['a', 'c']); // { 'a': 1, 'c': 3 }
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ---
 
@@ -507,7 +507,7 @@ const capitalizeEveryWord = str => str.replace(/\b[a-z]/g, char => char.toUpperC
 capitalizeEveryWord('hello world!'); // 'Hello World!'
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ### From camel case
 
@@ -529,7 +529,7 @@ fromCamelCase('someLabelThatNeedsToBeCamelized', '-'); // 'some-label-that-needs
 fromCamelCase('someJavascriptProperty', '_'); // 'some_javascript_property'
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ### Mask
 
@@ -548,7 +548,7 @@ mask(1234567890, 3); // '*******890'
 mask(1234567890, -4, '$'); // '$$$$567890'
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ### Pluralize
 
@@ -579,7 +579,7 @@ const autoPluralize = pluralize(PLURALS);
 autoPluralize(2, 'person'); // 'people'
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ### Yes or no
 
@@ -599,7 +599,7 @@ yesNo('No'); // false
 yesNo('Foo', true); // true
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)
 
 ---
 
@@ -620,4 +620,4 @@ isNil(null); // true
 isNil(undefined); // true
 ```
 
-[Back to top](#ecmascript-chart-card)
+[Back to top](#ecmascript-cheat-sheet)

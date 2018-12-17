@@ -1,8 +1,8 @@
-# Object chart card
+# Object cheat sheet
 
 <!-- TOC -->
 
-- [Object chart card](#object-chart-card)
+- [Object cheat sheet](#object-cheat-sheet)
   - [object.assign](#objectassign)
   - [object.keys](#objectkeys)
 

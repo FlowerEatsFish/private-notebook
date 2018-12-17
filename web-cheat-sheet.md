@@ -1,8 +1,8 @@
-# Web chart card
+# Web cheat sheet
 
 <!-- TOC -->
 
-- [Web chart card](#web-chart-card)
+- [Web cheat sheet](#web-cheat-sheet)
   - [IE-related issues](#ie-related-issues)
     - [ECMAScript 6 (or newest) support on Internet Explorer 9~11](#ecmascript-6-or-newest-support-on-internet-explorer-911)
     - [The "oninput" event of HTML elements](#the-oninput-event-of-html-elements)
@@ -30,7 +30,7 @@
   <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
   ```
 
-[Top](#web-chart-card)
+[Top](#web-cheat-sheet)
 
 ### The "oninput" event of HTML elements
 
@@ -56,7 +56,7 @@ This event occurs when the value of an \<input> or \<textarea> element is change
   }
   ```
 
-[Top](#web-chart-card)
+[Top](#web-cheat-sheet)
 
 ### CSS grid layout
 
@@ -108,7 +108,7 @@ IE use old CSS grid layout, so the codes as follows are necessary:
   }
   ```
 
-[Top](#web-chart-card)
+[Top](#web-cheat-sheet)
 
 ---
 
@@ -124,7 +124,7 @@ IE use old CSS grid layout, so the codes as follows are necessary:
   }
   ```
 
-[Top](#web-chart-card)
+[Top](#web-cheat-sheet)
 
 ---
 
@@ -177,7 +177,7 @@ IE use old CSS grid layout, so the codes as follows are necessary:
   }
   ```
 
-[Top](#web-chart-card)
+[Top](#web-cheat-sheet)
 
 ### CSS for responsive web design (RWD)
 
@@ -198,7 +198,7 @@ IE use old CSS grid layout, so the codes as follows are necessary:
   }
   ```
 
-[Top](#web-chart-card)
+[Top](#web-cheat-sheet)
 
 ### Get URL parameters
 
@@ -221,7 +221,7 @@ IE use old CSS grid layout, so the codes as follows are necessary:
   getURLParameters('google.com'); // {}
   ```
 
-[Top](#web-chart-card)
+[Top](#web-cheat-sheet)
 
 ### Strip HTML tags
 
@@ -239,7 +239,7 @@ IE use old CSS grid layout, so the codes as follows are necessary:
   stripHTMLTags('<p><em>lorem</em> <strong>ipsum</strong></p>'); // 'lorem ipsum'
   ```
 
-[Top](#web-chart-card)
+[Top](#web-cheat-sheet)
 
 ### Vertically and horizontally center text with CSS
 
@@ -256,4 +256,4 @@ IE use old CSS grid layout, so the codes as follows are necessary:
   }
   ```
 
-[Top](#web-chart-card)
+[Top](#web-cheat-sheet)
