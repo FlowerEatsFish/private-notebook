@@ -1,5 +1,14 @@
 # Common commands
 
+<!-- TOC -->
+
+- [Common commands](#common-commands)
+  - [保持雙系統 (Linux & Windows) 時間一致](#保持雙系統-linux--windows-時間一致)
+  - [Installing source codes](#installing-source-codes)
+  - [Commands for cleaning boot folder](#commands-for-cleaning-boot-folder)
+
+<!-- /TOC -->
+
 ## 保持雙系統 (Linux & Windows) 時間一致
 
 ```shell
@@ -52,4 +61,32 @@ $ make
 
 # 3. 安裝
 $ make install
+```
+
+## Commands for cleaning boot folder
+
+Check current version of Linux kernel:
+
+```shell
+uname -r
+```
+
+List all versions of Linux kernel images:
+
+```shell
+dpkg --list 'linux-image*'
+```
+
+Remove specific versions of Linux kernel images:
+
+```shell
+sudo rm -rf /boot/*-4.4.0-{53..83}-*
+# Remove versions from 4.4.53 to 4.4.83.
+```
+
+Clean files in boot folder:
+
+```shell
+sudo apt-get -f install
+sudo apt-get autoremove --purge
 ```
