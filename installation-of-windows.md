@@ -154,6 +154,6 @@
 
   - [Windows 7 Logon Background Changer](http://www.julien-manici.com/windows_7_logon_background_changer/)
 
-  - [WPS Office](https://www.wps.com/) (Community edition)
+  - [WPS Office](https://www.wps.com/) (Community/Business edition)
 
 [Top](#installation-of-windows)

@@ -108,7 +108,7 @@ Manjaro Linux is a new linux distribution which is based on Arch linux.
   $ cd ttf-wps-fonts
   $ makepkg -si
   ```
- 
+
 ## To remove packages with associated libraries
 
 ```shell

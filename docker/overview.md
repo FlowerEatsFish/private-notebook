@@ -38,6 +38,7 @@ docker swarm
 docker network
 docker service
 docker stack
+docker volume
 ```
 
 - File structrues:
