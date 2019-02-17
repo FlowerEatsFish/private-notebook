@@ -6,14 +6,21 @@
   - [Migration from React to React Native](#migration-from-react-to-react-native)
   - [Styling components](#styling-components)
   - [Making content scrollable](#making-content-scrollable)
+  - [React Native Router components](#react-native-router-components)
 
 ## [Installing iOS or Android simulator for develpoing](https://facebook.github.io/react-native/docs/getting-started)
+
+|Simulator|Windows|macOS|Linux|
+|---|---|---|---|
+|Android|O|O|O|
+|iOS|X|O|X|
 
 ## The difference between Web and React Native
 
 |HTML|JavaScript|React Native|
 |---|---|---|
-|onClick|-|onPress|
+|button.onClick|-|Touchable.onPress|
+|input.onChange|-|TextInput.onChangeText|
 |a.href|location.replace|Linking.openURL|
 |input[type="password"]|-|TextInput.secureTextEntry={true}|
 |input.autocomplete|-|TextInput.autoCorrect|
@@ -44,7 +51,7 @@
   import React from 'react';
   import ReactNative from 'react-native';
 
-  import App from 'component/app';
+  import App from 'components/app';
 
   ReactNative.AppRegistry.registerComponent(
     'Project Name',
@@ -66,7 +73,7 @@ const Header = () => {
   return (
     <View style={viewStyle}>
       <Text style={textStyle}>
-        I'm header.
+        I am header.
       </Text>
     </View>
   );
@@ -79,9 +86,9 @@ const styles = {
   viewStyle: {
     alignItems: 'center',
     backgroundColor: '#F8F8F8',
-    height: 60, // To avoid the overlap with a status bar.
+    height: 64, // To avoid the overlap with a status bar.
     justifyContent: 'center',
-    paddingTop: 15,
+    paddingTop: 16,
     shadowColor: '#000',
     shadowOffset: {
       height: 1,
@@ -119,4 +126,47 @@ const App = () => (
 );
 
 export default App;
+```
+
+## React Native Router components
+
+- [React Native Router](https://github.com/aksonov/react-native-router-flux)
+
+```javascript
+// router.js
+
+import React from 'react';
+import { Router, Scene } from 'react-native-router-flux';
+
+import LoginForm from './components/LoginForm';
+import Dashboard from './components/Dashboard';
+import Menu from './components/Menu';
+
+
+const Router = () => (
+  <Router>
+    <Scene key="auth">
+      <Scene
+        key="login" {/* Call "Actions.login()" to show this screen */}
+        component={LoginForm} {/* Show the component "LoginForm" */}
+        title="Login" {/* Make a nav bar and give it a title of "Login" */}
+        initial {/* This is the first screen to show */}
+      />
+    </Scene>
+    <Scene key="main">
+      <Scene
+        key="dashboard"
+        component={Dashboard}
+        title="Dashboard"
+      />
+      <Scene
+        key="menu"
+        component={Menu}
+        title="Menu"
+      />
+    </Scene>
+  </Router>
+);
+
+export default Router;
 ```
