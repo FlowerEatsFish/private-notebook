@@ -1,8 +1,8 @@
-# ECMAScript cheat sheet
+# Snippet cheat sheet
 
 <!-- TOC -->
 
-- [ECMAScript cheat sheet](#ecmascript-cheat-sheet)
+- [Snippet cheat sheet](#snippet-cheat-sheet)
   - [Array snippets](#array-snippets)
     - [Chunk](#chunk)
     - [Compact](#compact)
