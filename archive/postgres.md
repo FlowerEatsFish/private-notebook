@@ -1,7 +1,5 @@
 # To learn how to create PostgreSQL using Docker
 
-<!-- TOC -->
-
 - [To learn how to create PostgreSQL using Docker](#to-learn-how-to-create-postgresql-using-docker)
   - [To pull an image](#to-pull-an-image)
   - [To put saved data on host](#to-put-saved-data-on-host)
@@ -9,8 +7,6 @@
     - [Environment Variables](#environment-variables)
   - [To enter a container and run on PostgreSQL environment](#to-enter-a-container-and-run-on-postgresql-environment)
   - [To exit from a container but maintain it in running](#to-exit-from-a-container-but-maintain-it-in-running)
-
-<!-- /TOC -->
 
 ## To pull an image
 

@@ -2,13 +2,9 @@
 
 - Reference: [Docker Mastery](https://www.udemy.com/docker-mastery/learn/v4/overview)
 
-<!-- TOC -->
-
 - [To learn how to use Docker](#to-learn-how-to-use-docker)
   - [Installing Docker](#installing-docker)
   - [Getting started](#getting-started)
-
-<!-- /TOC -->
 
 ## Installing Docker
 
