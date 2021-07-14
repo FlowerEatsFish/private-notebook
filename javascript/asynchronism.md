@@ -2,14 +2,10 @@
 
 - Reference: [The Complete JavaScript Course 2018](https://www.udemy.com/the-complete-javascript-course/)
 
-<!-- TOC -->
-
 - [Asynchronism](#asynchronism)
   - [Promise hell](#promise-hell)
   - [Async/Await method](#asyncawait-method)
   - [To fetch data using Vanilla.js](#to-fetch-data-using-vanillajs)
-
-<!-- /TOC -->
 
 ## Promise hell
 

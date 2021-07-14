@@ -1,13 +1,9 @@
 # Common commands
 
-<!-- TOC -->
-
 - [Common commands](#common-commands)
   - [保持雙系統 (Linux & Windows) 時間一致](#保持雙系統-linux--windows-時間一致)
   - [Installing source codes](#installing-source-codes)
   - [Commands for cleaning boot folder](#commands-for-cleaning-boot-folder)
-
-<!-- /TOC -->
 
 ## 保持雙系統 (Linux & Windows) 時間一致
 

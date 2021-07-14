@@ -1,15 +1,9 @@
 # Installation of windows
 
-<!-- TOC -->
-
 - [Installation of windows](#installation-of-windows)
   - [Disk partitions](#disk-partitions)
   - [Fix boot files installed on other disk rather than on OS disk in Windows 10](#fix-boot-files-installed-on-other-disk-rather-than-on-os-disk-in-windows-10)
   - [Installing windows 7](#installing-windows-7)
-
-<!-- /TOC -->
-
----
 
 ## Disk partitions
 

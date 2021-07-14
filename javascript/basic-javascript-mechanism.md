@@ -2,15 +2,11 @@
 
 - Reference: [The Complete JavaScript Course 2018](https://www.udemy.com/the-complete-javascript-course/)
 
-<!-- TOC -->
-
 - [Basic JavaScript mechanism](#basic-javascript-mechanism)
   - [Variable object (VO)](#variable-object-vo)
   - [Hoisting](#hoisting)
   - [Scoping](#scoping)
   - [The "this" keyword](#the-this-keyword)
-
-<!-- /TOC -->
 
 ## Variable object (VO)
 

@@ -2,8 +2,6 @@
 
 Reference: [API 設計— 命名之術](https://medium.com/corneltek/api-%E8%A8%AD%E8%A8%88-%E7%AC%AC%E4%B8%80%E9%83%A8-%E5%91%BD%E5%90%8D%E4%B9%8B%E8%A1%93-8dfe71576e95)
 
-<!-- TOC -->
-
 - [Variable names](#variable-names)
   - [get-](#get-)
   - [set-](#set-)
@@ -15,8 +13,6 @@ Reference: [API 設計— 命名之術](https://medium.com/corneltek/api-%E8%A8%
   - [new-](#new-)
   - [remove-, delete-](#remove--delete-)
   - [traverse-](#traverse-)
-
-<!-- /TOC -->
 
 ## get-
 

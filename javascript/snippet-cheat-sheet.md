@@ -1,7 +1,5 @@
 # Snippet cheat sheet
 
-<!-- TOC -->
-
 - [Snippet cheat sheet](#snippet-cheat-sheet)
   - [Array snippets](#array-snippets)
     - [Chunk](#chunk)
@@ -38,10 +36,6 @@
     - [Yes or no](#yes-or-no)
   - [Type snippets](#type-snippets)
     - [Is nil](#is-nil)
-
-<!-- /TOC -->
-
----
 
 ## Array snippets
 

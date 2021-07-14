@@ -1,7 +1,5 @@
 # Elementary OS - Getting Started
 
-<!-- TOC -->
-
 - [Elementary OS - Getting Started](#elementary-os---getting-started)
   - [Partitions](#partitions)
   - [First step (required)](#first-step-required)
@@ -10,8 +8,6 @@
   - [Install packages by terminal](#install-packages-by-terminal)
   - [.deb package commands](#deb-package-commands)
   - [To remove leftover "emacs" app after press "sudo apt autoremove --purge emacs"](#to-remove-leftover-emacs-app-after-press-sudo-apt-autoremove---purge-emacs)
-
-<!-- /TOC -->
 
 ## Partitions
 

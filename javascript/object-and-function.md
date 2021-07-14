@@ -2,8 +2,6 @@
 
 - Reference: [The Complete JavaScript Course 2018](https://www.udemy.com/the-complete-javascript-course/)
 
-<!-- TOC -->
-
 - [Object and function](#object-and-function)
   - [Primitive list](#primitive-list)
   - [The proptotype chain](#the-proptotype-chain)
@@ -20,8 +18,6 @@
   - [Immediately Invoked Function Expression (IIFE)](#immediately-invoked-function-expression-iife)
   - [Closures](#closures)
   - [Bind, Call, and Apply](#bind-call-and-apply)
-
-<!-- /TOC -->
 
 ## Primitive list
 

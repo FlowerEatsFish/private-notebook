@@ -2,27 +2,23 @@
 
 Manjaro Linux is a new linux distribution which is based on Arch linux.
 
-<!-- TOC -->
-
-- [Manjaro Linux](#Manjaro-Linux)
-  - [Partitions](#Partitions)
-    - [Legacy boot mode](#Legacy-boot-mode)
-    - [UEFI boot mode](#UEFI-boot-mode)
-  - [Install packages by Pacman](#Install-packages-by-Pacman)
-    - [Docker](#Docker)
-    - [gcin Tools (Chinese input method)](#gcin-Tools-Chinese-input-method)
-    - [Vim](#Vim)
-    - [Visual Studio Code](#Visual-Studio-Code)
-    - [Chromium](#Chromium)
-    - [Hyper](#Hyper)
-  - [Install packages by AUR](#Install-packages-by-AUR)
-    - [Discord](#Discord)
-    - [WPS Office](#WPS-Office)
-  - [To remove packages with associated libraries](#To-remove-packages-with-associated-libraries)
-    - [HP System Software Manager](#HP-System-Software-Manager)
-    - [Microsoft Office Online](#Microsoft-Office-Online)
-
-<!-- /TOC -->
+- [Manjaro Linux](#manjaro-linux)
+  - [Partitions](#partitions)
+    - [Legacy boot mode](#legacy-boot-mode)
+    - [UEFI boot mode](#uefi-boot-mode)
+  - [Install packages by Pacman](#install-packages-by-pacman)
+    - [Docker](#docker)
+    - [gcin Tools (Chinese input method)](#gcin-tools-chinese-input-method)
+    - [Vim](#vim)
+    - [Visual Studio Code](#visual-studio-code)
+    - [Chromium](#chromium)
+    - [Hyper](#hyper)
+  - [Install packages by AUR](#install-packages-by-aur)
+    - [Discord](#discord)
+    - [WPS Office](#wps-office)
+  - [To remove packages with associated libraries](#to-remove-packages-with-associated-libraries)
+    - [HP System Software Manager](#hp-system-software-manager)
+    - [Microsoft Office Online](#microsoft-office-online)
 
 ## Partitions
 

@@ -1,7 +1,5 @@
 # Software list
 
-<!-- TOC -->
-
 - [Software list](#software-list)
   - [Chinese input (gcin)](#chinese-input-gcin)
   - [Google chrome](#google-chrome)
@@ -11,8 +9,6 @@
   - [Node v8.x](#node-v8x)
   - [Specific cursors of mouse](#specific-cursors-of-mouse)
   - [Steam](#steam)
-
-<!-- /TOC -->
 
 ## Chinese input (gcin)
 
