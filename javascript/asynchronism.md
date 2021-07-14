@@ -1,11 +1,15 @@
 # Asynchronism
 
-- Reference: [The Complete JavaScript Course 2018](https://www.udemy.com/the-complete-javascript-course/)
-
 - [Asynchronism](#asynchronism)
+  - [References](#references)
   - [Promise hell](#promise-hell)
   - [Async/Await method](#asyncawait-method)
   - [To fetch data using Vanilla.js](#to-fetch-data-using-vanillajs)
+
+## References
+
+- [The Complete JavaScript Course 2018](https://www.udemy.com/the-complete-javascript-course/)
+- [JavaScript Visualized: Promises & Async/Await](https://dev.to/lydiahallie/javascript-visualized-promises-async-await-5gke/)
 
 ## Promise hell
 

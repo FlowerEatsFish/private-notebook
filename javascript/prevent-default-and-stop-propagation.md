@@ -1,5 +1,15 @@
 # Prevent Default and Stop Propagation
 
+- [Prevent Default and Stop Propagation](#prevent-default-and-stop-propagation)
+  - [References](#references)
+  - [Source code](#source-code)
+
+## References
+
+- [Explore DOM Events](https://domevents.dev/)
+
+## Source code
+
 ```html
 <!DOCTYPE html>
 

@@ -1,11 +1,13 @@
 # Promise - Reject vs. Throw
 
-- Reference: [JavaScript Promises - reject vs. throw
-](https://stackoverflow.com/questions/33445415/javascript-promises-reject-vs-throw)
-
 - [Promise - Reject vs. Throw](#promise---reject-vs-throw)
+  - [References](#references)
   - [Schema](#schema)
   - [Reject vs. Throw](#reject-vs-throw)
+
+## References
+
+- [JavaScript Promises - reject vs. throw](https://stackoverflow.com/questions/33445415/javascript-promises-reject-vs-throw/)
 
 ## Schema
 

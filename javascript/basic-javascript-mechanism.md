@@ -1,12 +1,18 @@
 # Basic JavaScript mechanism
 
-- Reference: [The Complete JavaScript Course 2018](https://www.udemy.com/the-complete-javascript-course/)
-
 - [Basic JavaScript mechanism](#basic-javascript-mechanism)
+  - [References](#references)
   - [Variable object (VO)](#variable-object-vo)
   - [Hoisting](#hoisting)
   - [Scoping](#scoping)
   - [The "this" keyword](#the-this-keyword)
+
+## References
+
+- [The Complete JavaScript Course 2018](https://www.udemy.com/the-complete-javascript-course/)
+- [JavaScript Visualized: the JavaScript Engine](https://dev.to/lydiahallie/javascript-visualized-the-javascript-engine-4cdf/)
+- [JavaScript Visualized: Hoisting](https://dev.to/lydiahallie/javascript-visualized-hoisting-478h)
+- [JavaScript Visualized: Scope (Chain)](https://dev.to/lydiahallie/javascript-visualized-scope-chain-13pd/)
 
 ## Variable object (VO)
 

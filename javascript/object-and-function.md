@@ -1,8 +1,7 @@
 # Object and function
 
-- Reference: [The Complete JavaScript Course 2018](https://www.udemy.com/the-complete-javascript-course/)
-
 - [Object and function](#object-and-function)
+  - [References](#references)
   - [Primitive list](#primitive-list)
   - [The proptotype chain](#the-proptotype-chain)
     - [Prototype](#prototype)
@@ -18,6 +17,11 @@
   - [Immediately Invoked Function Expression (IIFE)](#immediately-invoked-function-expression-iife)
   - [Closures](#closures)
   - [Bind, Call, and Apply](#bind-call-and-apply)
+
+## References
+
+- [The Complete JavaScript Course 2018](https://www.udemy.com/the-complete-javascript-course/)
+- [JavaScript Visualized: Prototypal Inheritance](https://dev.to/lydiahallie/javascript-visualized-prototypal-inheritance-47co/)
 
 ## Primitive list
 

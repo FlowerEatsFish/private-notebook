@@ -1,6 +1,6 @@
-# React - Render Props vs. Higher-Order Component
+# React Class Components - Render Props vs. Higher-Order Component
 
-- [React - Render Props vs. Higher-Order Component](#react---render-props-vs-higher-order-component)
+- [React Class Components - Render Props vs. Higher-Order Component](#react-class-components---render-props-vs-higher-order-component)
   - [Render Props](#render-props)
   - [Higher-Order Component](#higher-order-component)
 

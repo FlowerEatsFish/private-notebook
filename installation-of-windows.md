@@ -86,7 +86,7 @@
       $ bootrec /rebuildbcd
       ```
 
-- Reference:
+- References:
 
   1. [【Win 10 練功坊】天啊！解決 UEFI 無法開機的慘況](https://www.techbang.com/posts/49377-win-10-practice-workshops-day-solving-misery-uefi-will-not-power-on)
 

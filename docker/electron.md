@@ -15,7 +15,7 @@
 
 ### 1-1. Add access of Docker to X11
 
-[Reference: couldn't open display unix:0](https://github.com/jessfraz/dockerfiles/issues/329#issuecomment-368262183)
+Reference: [couldn't open display unix:0](https://github.com/jessfraz/dockerfiles/issues/329#issuecomment-368262183)
 
 ```shell
 xhost + "local:docker@"
@@ -65,7 +65,7 @@ npm start
 
 ### 2-2. Add access of Docker to XQuartz
 
-[Reference: couldn't open display unix:0](https://github.com/jessfraz/dockerfiles/issues/329#issuecomment-368262183)
+Reference: [couldn't open display unix:0](https://github.com/jessfraz/dockerfiles/issues/329#issuecomment-368262183)
 
 ```shell
 xhost + 127.0.0.1
