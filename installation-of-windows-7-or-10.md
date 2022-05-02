@@ -1,9 +1,10 @@
-# Installation of windows
+# Installation of Windows 7 or 10
 
-- [Installation of windows](#installation-of-windows)
+- [Installation of Windows 7 or 10](#installation-of-windows-7-or-10)
   - [Disk partitions](#disk-partitions)
   - [Fix boot files installed on other disk rather than on OS disk in Windows 10](#fix-boot-files-installed-on-other-disk-rather-than-on-os-disk-in-windows-10)
   - [Installing windows 7](#installing-windows-7)
+  - [Other softwares](#other-softwares)
 
 ## Disk partitions
 
@@ -29,8 +30,6 @@
   $ convert gpt
   $ exit
   ```
-
-[Top](#installation-of-windows)
 
 ---
 
@@ -94,8 +93,6 @@
 
   3. [Windows 10 MBR 修復](https://home.gamer.com.tw/creationDetail.php?sn=3339579)
 
-[Top](#installation-of-windows)
-
 ---
 
 ## Installing windows 7
@@ -122,32 +119,26 @@
 
   10. Install and run Driver Booster.
 
-- Other softwares:
+---
 
-  - [7-Zip](http://www.7-zip.org/) (Community edition)
+## Other softwares
 
-  - [Best Antivirus 2017](http://www.toptenreviews.com/software/security/best-antivirus-software/)
+- [7-Zip](http://www.7-zip.org/)
 
-  - [CCleaner](https://www.piriform.com/ccleaner)
+- [Bitdefender](https://www.bitdefender.com/solutions/free.html)
 
-  - [Driver Booster](https://www.iobit.com/en/driver-booster.php)
+- [Eusing Cleaner](http://www.eusing.com/free_system_cleaner/system_cleaner.htm)
 
-  - [Eusing Cleaner](http://www.eusing.com/free_system_cleaner/system_cleaner.htm)
+- [Eusing Free Registry Cleaner](http://www.eusing.com/free_registry_cleaner/registry_cleaner.htm)
 
-  - [Eusing Free Registry Cleaner](http://www.eusing.com/free_registry_cleaner/registry_cleaner.htm)
+- [Microsoft Office](https://products.office.com/) (Business edition)
 
-  - [Google Chrome](https://www.google.com/chrome/)
+- [Only Office](https://www.onlyoffice.com/)
 
-  - [Microsoft Office](https://products.office.com/) (Business edition)
+- [Google Chrome](https://www.google.com/chrome/)
 
-  - [Mozilla Firefox](https://www.mozilla.org/)
+- [Mozilla Firefox](https://www.mozilla.org/)
 
-  - [WinRAR](https://www.rarlab.com/) (Business edition)
+- [Speccy](https://www.piriform.com/speccy)
 
-  - [Speccy](https://www.piriform.com/speccy)
-
-  - [Windows 7 Logon Background Changer](http://www.julien-manici.com/windows_7_logon_background_changer/)
-
-  - [WPS Office](https://www.wps.com/) (Community/Business edition)
-
-[Top](#installation-of-windows)
+- [Windows 7 Logon Background Changer](http://www.julien-manici.com/windows_7_logon_background_changer/)
